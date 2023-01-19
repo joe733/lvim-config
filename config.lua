@@ -34,9 +34,13 @@ lvim.keys.normal_mode = {
   ["<M-Down>"] = "ddp",
   -- paste
   ["<C-v>"] = "]p",
+  -- swtich tabs
+  ["<C-Tab>"] = ":bnext<cr>",
+  ["<C-S-Tab>"] = ":bprev<cr>",
   -- save & quit
   ["<C-s>"] = ":w<cr>",
   ["<C-q>"] = ":q<cr>",
+  ["<C-w>"] = ":BufferKill<cr>"
 }
 lvim.keys.insert_mode = {
   -- selection
@@ -54,9 +58,13 @@ lvim.keys.insert_mode = {
   ["<M-Down>"] = "<esc>ddpi",
   -- paste
   ["<C-v>"] = "<esc>]pa",
+  -- swtich tabs
+  ["<C-Tab>"] = "<esc>:bnext<cr>",
+  ["<C-S-Tab>"] = "<esc>:bprev<cr>",
   -- save & quit
   ["<C-s>"] = "<esc>:w<cr>a",
   ["<C-q>"] = "<esc>:q<cr>",
+  ["<C-w>"] = "<esc>:BufferKill<cr>",
 }
 lvim.keys.visual_mode = {
   -- selection
@@ -72,9 +80,13 @@ lvim.keys.visual_mode = {
   ["<C-c>"] = "y",
   ["<C-x>"] = "x",
   ["<C-v>"] = "]p",
+  -- swtich tabs
+  ["<C-Tab>"] = "<esc>:bnext<cr>",
+  ["<C-S-Tab>"] = "<esc>:bprev<cr>",
   -- save & quit
   ["<C-s>"] = "<esc>:w<cr>v",
   ["<C-q>"] = "<esc>:q<cr>",
+  ["<C-w>"] = "<esc>:BufferKill<cr>",
 }
 
 -- lvim.keys.normal_mode["<S-l>"] = ":BufferLineCycleNext<CR>"

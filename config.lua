@@ -20,11 +20,18 @@ lvim.leader = "space"
 -- add your own keymapping
 lvim.keys.normal_mode = {
   -- selection
-  ["<C-a>"] = "ggVG",
-  ["<C-S-Left>"] = "vb",
-  ["<C-S-Right>"] = "vw",
+  ["<S-Left>"] = "vh",
+  ["<S-Right>"] = "vl",
+  ["<S-Up>"] = "vk",
+  ["<S-Down>"] = "vj",
   ["<S-Home>"] = "v<Home>",
   ["<S-End>"] = "v<End>",
+  ["<C-S-Left>"] = "vb",
+  ["<C-S-Right>"] = "vw",
+  ["<C-a>"] = "ggvG",
+  -- shift lines
+  ["<M-Up>"] = "ddkP",
+  ["<M-Down>"] = "ddp",
   -- paste
   ["<C-v>"] = "p",
   -- save & quit
@@ -33,13 +40,20 @@ lvim.keys.normal_mode = {
 }
 lvim.keys.insert_mode = {
   -- selection
-  ["<C-a>"] = "<esc>ggvG",
-  ["<C-S-Left>"] = "<esc>vb",
-  ["<C-S-Right>"] = "<esc>vw",
+  ["<S-Left>"] = "<esc>vh",
+  ["<S-Right>"] = "<esc>vl",
+  ["<S-Up>"] = "<esc>vk",
+  ["<S-Down>"] = "<esc>vj",
   ["<S-Home>"] = "<esc>v<Home>",
   ["<S-End>"] = "<esc>v<End>",
+  ["<C-S-Left>"] = "<esc>vb",
+  ["<C-S-Right>"] = "<esc>vw",
+  ["<C-a>"] = "<esc>ggvG",
+  -- shift lines
+  ["<M-Up>"] = "<esc>ddkPi",
+  ["<M-Down>"] = "<esc>ddpi",
   -- paste
-  ["<C-v>"] = "pa",
+  ["<C-v>"] = "<esc>pa",
   -- save & quit
   ["<C-s>"] = "<esc>:w<cr>a",
   ["<C-q>"] = "<esc>:q<cr>",
@@ -47,10 +61,19 @@ lvim.keys.insert_mode = {
 lvim.keys.visual_mode = {
   -- selection
   ["<C-a>"] = "<esc>ggvG",
-  -- copy
+  ["<S-Left>"] = "h",
+  ["<S-Right>"] = "l",
+  ["<S-Up>"] = "k",
+  ["<S-Down>"] = "j",
+  -- shift lines
+  ["<M-Up>"] = "<esc>ddkP",
+  ["<M-Down>"] = "<esc>ddp",
+  -- copy, cut & paste
   ["<C-c>"] = "y",
+  ["<C-x>"] = "x",
+  ["<C-v>"] = "<esc>p",
   -- save & quit
-  ["<C-s>"] = "<esc>:w<cr>V",
+  ["<C-s>"] = "<esc>:w<cr>v",
   ["<C-q>"] = "<esc>:q<cr>",
 }
 

@@ -33,7 +33,7 @@ lvim.keys.normal_mode = {
   ["<M-Up>"] = "ddkP",
   ["<M-Down>"] = "ddp",
   -- paste
-  ["<C-v>"] = "p",
+  ["<C-v>"] = "]p",
   -- save & quit
   ["<C-s>"] = ":w<cr>",
   ["<C-q>"] = ":q<cr>",
@@ -53,7 +53,7 @@ lvim.keys.insert_mode = {
   ["<M-Up>"] = "<esc>ddkPi",
   ["<M-Down>"] = "<esc>ddpi",
   -- paste
-  ["<C-v>"] = "<esc>pa",
+  ["<C-v>"] = "<esc>]pa",
   -- save & quit
   ["<C-s>"] = "<esc>:w<cr>a",
   ["<C-q>"] = "<esc>:q<cr>",
@@ -66,12 +66,12 @@ lvim.keys.visual_mode = {
   ["<S-Up>"] = "k",
   ["<S-Down>"] = "j",
   -- shift lines
-  ["<M-Up>"] = "<esc>ddkP",
-  ["<M-Down>"] = "<esc>ddp",
+  ["<M-Up>"] = "dkP",
+  ["<M-Down>"] = "djp",
   -- copy, cut & paste
   ["<C-c>"] = "y",
   ["<C-x>"] = "x",
-  ["<C-v>"] = "<esc>p",
+  ["<C-v>"] = "]p",
   -- save & quit
   ["<C-s>"] = "<esc>:w<cr>v",
   ["<C-q>"] = "<esc>:q<cr>",
